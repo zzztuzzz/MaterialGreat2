@@ -23,10 +23,7 @@ public class MainActivity extends AppCompatActivity
     public static MainActivity instance;
 
     private ViewPagerAdapter adapter;
-    private ListViewFragmentOne fragmentOne;
-    private ListViewFragmentOne fragmentTwo;
-    private ListViewFragmentOne fragmentThree;
-    private ListViewFragmentOne fragmentFour;
+
 
     private ViewPager viewPager;
     private TabLayout allTabs;
@@ -149,6 +146,11 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void setupViewPager() {
+        ListViewFragmentOne fragmentOne;
+        ListViewFragmentOne fragmentTwo;
+        ListViewFragmentOne fragmentThree;
+        ListViewFragmentOne fragmentFour;
+
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
         fragmentOne = new ListViewFragmentOne();
         fragmentTwo = new ListViewFragmentOne();
